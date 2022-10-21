@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "ABCDiatype Medium";
+    src: url("assets/font/abcdiatype-medium.woff2") format("woff2"),
+        url("assets/font/abcdiatype-medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "ABCDiatype Bold";
+    src: url("assets/font/abcdiatype-bold.woff2") format("woff2"),
+        url("assets/font/abcdiatype-bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "ABCDiatype Mono";
+    src: url("assets/font/abcdiatypemono-medium.woff2") format("woff2"),
+        url("assets/font/abcdiatypemono-medium.woff") format("woff");
+}
+
+html {
+    font-size: 100%;
+}
+
+:root {
+    --header-txt: 1rem;
+}
+
+body {
+    font-family: "ABCDiatype Medium";
+}
+
+h1 {
+    font-family: "ABCDiatype Bold";
+    font-size: var(--header-txt);
+    text-transform: uppercase;
+}
