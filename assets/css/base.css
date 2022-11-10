@@ -154,15 +154,20 @@ a {
 }
 
 button,
-label {
-    cursor: pointer;
-}
-
-button,
 input {
     outline: 0;
 }
 
+button:focus,
+button:visited {
+    display: none;
+}
+
 ::-webkit-scrollbar {
     display: none;
+}
+
+::selection {
+    color: var(--green);
+    background-color: transparent;
 }
