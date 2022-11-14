@@ -46,11 +46,3 @@ if (mainWrapper, mainLink) {
     mediaQuery.addListener(handleMediaQuery);
     handleMediaQuery(mediaQuery);
 }
-
-// const cursor = document.getElementById("cursor");
-// document.addEventListener("mousemove", (event) => {
-//     let x = event.pageX;
-//     let y = event.pageY;
-//     cursor.style.left = x + "px";
-//     cursor.style.top = y + "px";
-// });

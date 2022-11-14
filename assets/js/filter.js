@@ -6,7 +6,7 @@ const filtersObjects = document.getElementById("filters-objects");
 const filtersObjectsClose = document.getElementById("filters-objects-close");
 const audioFiles = document.querySelectorAll("audio");
 
-const openFiltersOnClick = (button, elementOne, className, elementTwo) => {
+const openFilterMenu = (button, elementOne, className, elementTwo) => {
     button.addEventListener("click", () => {
         elementOne.classList.toggle(className);
         if (elementTwo.classList.contains(className)) {
@@ -15,20 +15,18 @@ const openFiltersOnClick = (button, elementOne, className, elementTwo) => {
     });
 };
 
-const clickEvents = (button, element, className) => {
+const closeFilterMenu = (button, element, className) => {
     button.addEventListener("click", () => {
         if (element.classList.contains(className)) {
             element.classList.remove(className);
-        } else {
-            element.classList.add(className);
         }
     });
 };
 
-openFiltersOnClick(filterStoriesBtn, filtersStories, "show", filtersObjects);
-openFiltersOnClick(filterObjectsBtn, filtersObjects, "show", filtersStories);
-clickEvents(filtersStoriesClose, filtersStories, "show");
-clickEvents(filtersObjectsClose, filtersObjects, "show");
+openFilterMenu(filterStoriesBtn, filtersStories, "show", filtersObjects);
+openFilterMenu(filterObjectsBtn, filtersObjects, "show", filtersStories);
+closeFilterMenu(filtersStoriesClose, filtersStories, "show");
+closeFilterMenu(filtersObjectsClose, filtersObjects, "show");
 
 const filterBtns = document.querySelectorAll(".filter-button");
 const filterClear = document.querySelectorAll(".filter-clear");

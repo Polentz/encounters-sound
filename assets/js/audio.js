@@ -151,7 +151,7 @@ let draggies = []
 
 for (let draggableElem of draggableElems) {
     let draggie = new Draggabilly(draggableElem, {
-        containment: "main"
+        containment: "html"
     });
     draggies.push(draggie);
 }
